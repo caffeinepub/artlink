@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Frontend-only social media website for artists named Artlink, matching a provided reference UI, with all buttons and UI interactions working on the client side.",
+  "architectural_notes": [
+    "Frontend-only scope (no backend).",
+    "UI should closely replicate a provided reference design."
+  ],
+  "known_issues": [
+    "Reference UI asset (screenshot/link) is not included in the conversation transcript; required to match design accurately."
+  ],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-recreate-the-artlink-ui-to-closely-match-the-provided-reference-image-layout-spacing-typography-colors-component-shapes-including-1-login-screen-split-card-with-artwork-on-left-login-form-on-right-2-home-feed-screen-with-left-sidebar-navigation-and-community-list-top-search-bar-stories-row-main-post-feed-and-right-side-suggested-for-you-panel-and-3-explore-screen-with-the-same-global-layout-and-a-content-grid-with-category-filter-chips",
+      "title": "Recreate the Artlink UI to closely match the provided reference image (layout, spacing, typography, colors, component shapes), including: (1) Login screen (split card with artwork on left + login form on right), (2) Home feed screen with left sidebar navigation and community list, top search bar, stories row, main post feed, and right-side 'Suggested for you' panel, and (3) Explore screen with the same global layout and a content grid with category/filter chips.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-client-side-routing-navigation-so-all-primary-sidebar-items-and-key-ui-controls-navigate-to-the-correct-screens-home-explore-create-profile-and-communities-community-detail-view-use-placeholder-mock-screens-for-any-sections-not-fully-defined-by-the-reference-image-but-keep-the-global-layout-consistent",
+      "title": "Implement client-side routing/navigation so all primary sidebar items and key UI controls navigate to the correct screens: Home, Explore, Create, Profile, and Communities (community detail view). Use placeholder/mock screens for any sections not fully defined by the reference image, but keep the global layout consistent.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-make-all-visible-buttons-and-interactive-ui-elements-perform-meaningful-client-side-actions-no-backend-login-form-validation-login-submits-to-enter-the-app-forgot-password-and-signup-open-appropriate-client-side-flows-modal-or-route-follow-buttons-toggle-state-like-comment-share-on-posts-update-ui-state-story-items-are-clickable-search-input-filters-mock-content-and-notification-message-profile-icons-open-dropdowns-or-panels",
+      "title": "Make all visible buttons and interactive UI elements perform meaningful client-side actions (no backend): login form validation + 'Login' submits to enter the app, 'Forgot password' and 'Signup' open appropriate client-side flows (modal or route), follow buttons toggle state, like/comment/share on posts update UI state, story items are clickable, search input filters mock content, and notification/message/profile icons open dropdowns or panels.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-small-mock-data-layer-for-users-posts-communities-stories-and-explore-tiles-and-persist-key-ui-state-in-localstorage-e-g-mock-logged-in-user-follows-likes-and-last-selected-route-filter-so-interactions-remain-after-refresh",
+      "title": "Create a small mock data layer for users, posts, communities, stories, and explore tiles, and persist key UI state in localStorage (e.g., mock logged-in user, follows, likes, and last selected route/filter) so interactions remain after refresh.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-required-generated-static-image-assets-login-illustration-background-accents-placeholder-avatars-and-placeholder-artwork-media-tiles-into-frontend-public-assets-generated-and-wire-them-into-the-ui-so-the-screens-resemble-the-reference-image-without-broken-images",
+      "title": "Add the required generated static image assets (login illustration/background accents, placeholder avatars, and placeholder artwork/media tiles) into frontend/public/assets/generated and wire them into the UI so the screens resemble the reference image without broken images.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-adjust-the-home-page-feed-layout-so-the-first-post-card-appears-closer-to-the-stories-row-reduce-the-vertical-spacing-margins-that-push-the-posts-too-far-down-while-keeping-the-overall-home-layout-stories-post-feed-right-side-suggestions-intact",
+      "title": "Adjust the Home page feed layout so the first post card appears closer to the Stories row (reduce the vertical spacing/margins that push the posts too far down), while keeping the overall Home layout (stories, post feed, right-side suggestions) intact.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Build Artlink (artist-focused social media) frontend to match the provided reference UI closely.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Implement working client-side UI interactions for all buttons/controls (frontend-only; no backend required).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Adjust Home feed layout so the post feed is positioned higher, closer to the Stories section (reduce vertical spacing/margins pushing posts down).",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Artlink",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

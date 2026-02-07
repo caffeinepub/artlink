@@ -1,0 +1,23 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-adjust-the-home-page-feed-layout-so-the-first-post-card-appears-closer-to-the-stories-row-reduce-the-vertical-spacing-margins-that-push-the-posts-too-far-down-while-keeping-the-overall-home-layout-stories-post-feed-right-side-suggestions-intact",
+      "featureTitle": "Adjust the Home page feed layout so the first post card appears closer to the Stories row (reduce the vertical spacing/margins that push the posts too far down), while keeping the overall Home layout (stories, post feed, right-side suggestions) intact.",
+      "files": [
+        "frontend/src/pages/HomePage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

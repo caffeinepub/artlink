@@ -1,0 +1,38 @@
+{
+  "kind": "build_request",
+  "title": "Move Home feed posts closer to Stories section",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-6",
+      "text": "Adjust the Home page feed layout so the first post card appears closer to the Stories row (reduce the vertical spacing/margins that push the posts too far down), while keeping the overall Home layout (stories, post feed, right-side suggestions) intact.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3"
+        ],
+        "quotes": [
+          "the post are very down move it near the stories section"
+        ]
+      },
+      "acceptanceCriteria": [
+        "On the Home page, the vertical gap between the bottom of the Stories row and the top of the first PostCard is visibly reduced compared to the current implementation.",
+        "No overlap occurs between Stories and the first PostCard; spacing remains consistent across common breakpoints (mobile and lg desktop).",
+        "The right-side 'Suggested for you' panel remains in its current column and alignment on lg screens.",
+        "No backend changes are introduced."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not edit files under frontend/src/components/ui (read-only).",
+    "Keep all changes within the existing React + Tailwind layout patterns already used in the project."
+  ],
+  "nonGoals": [
+    "Redesigning PostCard or StoriesRow visual styling beyond adjusting spacing/positioning between them.",
+    "Changing the data shown in posts/stories or adding new feed features."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

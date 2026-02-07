@@ -1,0 +1,24 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Home feed spacing adjustment between Stories and first post",
+  "requirements": [
+    {
+      "id": "REQ-6",
+      "summary": "Reduce the vertical gap between the Stories row and the first PostCard on the Home page while preserving the existing 2-column feed + right-side suggestions layout on lg screens.",
+      "acceptanceCriteria": [
+        "On the Home page, the vertical gap between the bottom of the Stories row and the top of the first PostCard is visibly reduced compared to the current implementation.",
+        "No overlap occurs between Stories and the first PostCard; spacing remains consistent across common breakpoints (mobile and lg desktop).",
+        "The right-side 'Suggested for you' panel remains in its current column and alignment on lg screens.",
+        "No backend changes are introduced."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Adjust the Tailwind spacing classes controlling vertical layout in the left column so the gap between <StoriesRow /> and the post feed container is smaller (e.g., remove/replace the parent space-y-* and apply a smaller responsive margin between StoriesRow and the first post), while keeping the existing grid structure and the lg right-side suggestions column unchanged."
+        }
+      ]
+    }
+  ]
+}
